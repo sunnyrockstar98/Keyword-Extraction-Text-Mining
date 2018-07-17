@@ -1,4 +1,4 @@
-#Keyword Extraction from a document using Python#
+#Keyword Extraction from a document using Python
 
 (Direct link to the code:
 
@@ -13,18 +13,26 @@ RAKE is built on the observation that keywords usually contain multiple informat
 The algorithm:
 
 Given an input document on which we want to extract keywords,
-Split the document into an array of words, breaking it at word delimiters (like spaces, punctuation, etc. ).
-Split these words into sequences of contiguous words, breaking every sequence at a stopword hence making it a “candidate keyword”.
-  Calculate the “score” of each individual word in the list of candidate keywords. This is calculated by:
+1. Split the document into an array of words, breaking it at word delimiters (like spaces, punctuation, etc. ).
+
+2. Split these words into sequences of contiguous words, breaking every sequence at a stopword hence making it a “candidate keyword”.
+
+3. Calculate the “score” of each individual word in the list of candidate keywords. This is calculated by:
 “degree(word)/frequency(word)”
-Here  the degree of a word represents how frequently it co-occurs with other words in the candidate keywords. 
-  For each candidate keyword, add the word scores of its constituent words to find the candidate keyword score.
-  Take the first one-third highest scoring candidates from the list of candidates as the final list of extracted keywords.
+Here  the degree of a word represents how frequently it co-occurs with other words in the candidate keywords.
+
+
+4. For each candidate keyword, add the word scores of its constituent words to find the candidate keyword score.
+
+5. Take the first one-third highest scoring candidates from the list of candidates as the final list of extracted keywords.
 
 The advantages of RAKE are its speed, computational efficiency, ability to work on individual documents and its precision despite its simplicity.
+
 The code can be found in this git repo:
 https://github.com/sunnyrockstar98/Keyword-Extraction-Text-Mining
 In the given assignment after running the code on: http://bit.ly/epo_auto_sub_form
+
+
 The final list of keywords in order of their weightage(score):
 
 Keyword:  // java code ,    Score:    6.719909274193548
