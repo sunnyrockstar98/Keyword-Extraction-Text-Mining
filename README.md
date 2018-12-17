@@ -30,7 +30,7 @@ The advantages of RAKE are its speed, computational efficiency, ability to work 
 
 The code can be found in this git repo:
 https://github.com/sunnyrockstar98/Keyword-Extraction-Text-Mining
-In the given assignment after running the code on: http://bit.ly/epo_auto_sub_form
+
 
 
 The final list of keywords in order of their weightage(score) is provided in this text file.
